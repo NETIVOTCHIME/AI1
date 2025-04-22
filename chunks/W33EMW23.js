@@ -1,0 +1,1 @@
+import{a as r}from"./OMLGX5X7.js";import{b as e}from"./27O46L5C.js";var t="maxai-global-popup-container";var n=e(),p=()=>{let o=document.createElement(n?"use-chat-gpt-ai":"div");o.id=t,document.body.appendChild(o),r.addProtectedRoot({rootId:t,renderFn:p})},m=o=>document.querySelector(`#${t}`)?.shadowRoot?.querySelector(o);export{t as a,p as b,m as c};

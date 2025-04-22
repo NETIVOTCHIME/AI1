@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "コンテンツとデータのAI分析。ページ、記事、動画、ファイルとチャットして、数秒で専門的な洞察を得ましょう。"
+   },
+   "name": {
+      "message": "MaxAI: ブラウジング中にAIに何でも聞いてください (DeepSeek, GPT, Gemini, Claudeなど)"
+   },
+   "sn": {
+      "message": "MaxAI"
+   }
+}

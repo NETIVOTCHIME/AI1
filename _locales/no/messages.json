@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "AI-analyse for innhold og data. Chat med sider, artikler, videoer og filene dine for å få ekspertinnsikt på sekunder."
+   },
+   "name": {
+      "message": "MaxAI: Ask AI anything as you browse (DeepSeek, GPT, Gemini, Claude, etc.)"
+   },
+   "sn": {
+      "message": "MaxAI"
+   }
+}

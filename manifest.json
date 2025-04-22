@@ -1,0 +1,85 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "assets/USE_CHAT_GPT_AI/icons/maxai_16_normal.png",
+         "24": "assets/USE_CHAT_GPT_AI/icons/maxai_32_normal.png",
+         "32": "assets/USE_CHAT_GPT_AI/icons/maxai_32_normal.png"
+      },
+      "default_popup": "pages/popup/index.html",
+      "default_title": "MaxAI"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "commands": {
+      "_execute_action": {
+         "description": "Active MaxAI",
+         "suggested_key": {
+            "default": "Alt+J",
+            "linux": "Alt+J",
+            "mac": "Command+J",
+            "windows": "Alt+J"
+         }
+      },
+      "open-immersive-chat": {
+         "description": "Open immersive chat",
+         "suggested_key": {
+            "default": "Alt+I",
+            "linux": "Alt+I",
+            "mac": "Command+I",
+            "windows": "Alt+I"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "import_content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "import_apps_content-scripts_checkMaxAIStatus.js" ],
+      "matches": [ "https://www.maxai.co/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": false,
+      "js": [ "import_apps_content-scripts_injectDocumentStart.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "apps/content-scripts/website/googleDoc.js" ],
+      "matches": [ "https://docs.google.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "all_frames": true,
+      "js": [ "import_apps_content-scripts_iframeDocumentEnd.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_desc__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/USE_CHAT_GPT_AI/icons/maxai_128_normal.png",
+      "16": "assets/USE_CHAT_GPT_AI/icons/maxai_16_normal.png",
+      "32": "assets/USE_CHAT_GPT_AI/icons/maxai_32_normal.png",
+      "48": "assets/USE_CHAT_GPT_AI/icons/maxai_48_normal.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuyyxq7RDB+EkT3ZiyuDJpP+OCkQnfJpSvriOupKff4ymt6bCwCBS22wZryBdK9PQcwyLxNNn+V8MeDiL6xyGWKNSg1pFNRXIRkmq90yuXcP/OCNTE7zGJ6nzgEIpykonMaEFlitHcAmGiSGzkk8zy6GIyVnrLuOfjrQhaV2XY+TmlXe3G/tp2JCiO/rBwXhT0Ac7ARhoU6vfPAIcz5dtyLH1E0jjmmbwDD6uvE+y65rqhhVBb1a1U3lRonE8gcpW6OwEPJiotafk5I+lqgdCVOTx0w7L4TzsUsToYY9mDFVPFreOAND9Bau/8NyMwqPBPKRJSkKSX3Z/DBeNp70QywIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_name__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "pages/settings/index.html"
+   },
+   "permissions": [ "tabs", "scripting", "storage", "management", "contextMenus", "clipboardRead", "clipboardWrite", "declarativeNetRequestWithHostAccess" ],
+   "short_name": "__MSG_sn__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.7.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "worker.js", "i18n/locales/*", "pages/pdf/*", "content.css", "content_style.css", "chunks/*.js", "assets/*", "pages/*", "apps/*", "content.js", "apps/content-scripts/checkMaxAIStatus.js", "apps/content-scripts/injectDocumentStart.js", "apps/content-scripts/iframeDocumentEnd.js" ]
+   } ]
+}

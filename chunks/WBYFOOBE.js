@@ -1,0 +1,1 @@
+var r="\\ud800-\\udfff",a="\\u0300-\\u036f",f="\\ufe20-\\ufe2f",u="\\u20d0-\\u20ff",o=a+f+u,s="\\ufe0e\\ufe0f",n="\\u200d",d=RegExp("["+n+r+o+s+"]");function g(e){return d.test(e)}var t=g;export{t as a};

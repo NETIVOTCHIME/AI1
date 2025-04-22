@@ -1,0 +1,1 @@
+import{a as u}from"./4B6UFNBQ.js";import{f as o}from"./GAV6HCJA.js";var e=o(u()),s=r=>{let t=(0,e.useRef)(r);t.current=r,(0,e.useEffect)(()=>{let n=()=>{t.current()};return window.addEventListener("blur",n),()=>{window.removeEventListener("blur",n)}},[])};export{s as a};

@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "AI анализ за съдържание и данни. Чат с страници, статии, видеа и вашите файлове, за да получите експертни прозрения за секунди."
+   },
+   "name": {
+      "message": "MaxAI: Ask AI anything as you browse (DeepSeek, GPT, Gemini, Claude, etc.)"
+   },
+   "sn": {
+      "message": "MaxAI"
+   }
+}

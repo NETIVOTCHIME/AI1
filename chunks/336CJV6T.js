@@ -1,0 +1,1 @@
+import{a as o}from"./JQWMDYRH.js";import{ba as s,l as r,v as p}from"./GZKBVB6W.js";import{F as m}from"./PCHDBHHN.js";import{f as a}from"./GAV6HCJA.js";var t=a(m()),n=(0,t.default)("MuiBox",["root"]),e=n;var f=s(),l=p({themeId:r,defaultTheme:f,defaultClassName:e.root,generateClassName:o.unstable_ClassNameGenerator.generate}),T=l;export{e as a,T as b};

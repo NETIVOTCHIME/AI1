@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "콘텐츠 및 데이터에 대한 AI 분석. 페이지, 기사, 비디오 및 파일과 대화하여 전문가 수준의 통찰력을 몇 초 만에 얻으세요."
+   },
+   "name": {
+      "message": "MaxAI: 브라우징 중 AI에게 무엇이든 물어보세요 (DeepSeek, GPT, Gemini, Claude 등)"
+   },
+   "sn": {
+      "message": "MaxAI"
+   }
+}

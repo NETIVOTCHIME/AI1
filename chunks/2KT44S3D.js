@@ -1,0 +1,1 @@
+import{a as u}from"./4B6UFNBQ.js";import{f}from"./GAV6HCJA.js";var e=f(u()),s=n=>{let r=(0,e.useRef)(),t=(0,e.useRef)(!1),c=(0,e.useRef)(!1);t.current&&(c.current=!0),(0,e.useEffect)(()=>{if(!t.current)return t.current=!0,r.current=n(),()=>{c.current&&r.current&&r.current()}},[])};export{s as a};
